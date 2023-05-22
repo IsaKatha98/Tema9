@@ -9,34 +9,31 @@ import java.util.List;
  * vayan generando, y se mostrará la colección resultante por pantalla.
  */
 
-
 public class ArrayListMain {
 
 	public static void main(String[] args) {
-		
-	//Creamos la colección
-	List <Integer> coleccion = new ArrayList<Integer>();
-	
-	//Creamos la variable que guardará el valor que se produce de forma aleatoria.
-	int num;
-	int index=0; //Un índice que indica el tamaño de la lista.
-	
-	//Vamos generando números y añadiéndolos a la colección y paramos cuando index=20.
-	while (index<=20) {
-		
-		num=(int) (Math.random()*100);
-		coleccion.add(num);
-		index++;
-	}
-	
-	//Imprimimos la colección.
-	System.out.println("Colección: "+coleccion);
-	
-	System.out.println();
+
+		// Creamos la colección
+		List<Integer> coleccion = new ArrayList<Integer>();
+
+		// Creamos la variable que guardará el valor que se produce de forma aleatoria.
+		int num;
+		int index = 0; // Un índice que indica el tamaño de la lista.
+
+		// Vamos generando números y añadiéndolos a la colección y paramos cuando
+		// index=20.
+		while (index <= 20) {
+
+			num = (int) (Math.random() * 100);
+			coleccion.add(num);
+			index++;
+		}
+
+		// Imprimimos la colección.
+		System.out.println("Colección: " + coleccion);
+
+		System.out.println();
 
 	}
-
-
-	
 
 }

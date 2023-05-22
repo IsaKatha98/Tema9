@@ -71,6 +71,9 @@ public class HashMapMain {
 	
 	}
 
+	/**
+	 * Método que imprime el menú del CRUD.
+	 */
 	public static void menu() {
 
 		System.out.println("PRODUCTOS");
@@ -82,6 +85,9 @@ public class HashMapMain {
 		
 	}
 	
+	/**
+	 * Método que da de alta un producto nuevo.
+	 */
 	public static void altaProducto () {
 		
 		sc.nextLine();
@@ -98,6 +104,11 @@ public class HashMapMain {
 		
 	}
 	
+	/**
+	 * Método que elimina un producto.
+	 * 
+	 * @param nombre así se identifica el producto a borrar.
+	 */
 	public static void bajaProducto (String nombre) {
 		
 		productos.remove(nombre);
@@ -106,6 +117,9 @@ public class HashMapMain {
 		
 	}
 	
+	/**
+	 * Método que lista todos los productos que hay.
+	 */
 	public static void listado () {
 		
 		System.out.println("Productos disponibles: "+productos);
